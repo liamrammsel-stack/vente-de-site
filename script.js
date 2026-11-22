@@ -1,10 +1,10 @@
 const products=[
-{id:1,name:"Élégance Business",category:"business",label:"BUSINESS",price:49,description:"Un site vitrine raffiné pour présenter votre activité.",tag:"BEST-SELLER",style:"business"},
-{id:2,name:"Boutique Signature",category:"shop",label:"E-COMMERCE",price:99,description:"Une base chic pour mettre vos produits en valeur.",tag:"PREMIUM",style:"shop"},
-{id:3,name:"Portfolio Créatif",category:"portfolio",label:"PORTFOLIO",price:39,description:"Présentez vos projets avec une mise en page soignée.",tag:"",style:"portfolio"},
-{id:4,name:"Studio Minimal",category:"business",label:"BUSINESS",price:29,description:"Une présence en ligne simple, claire et élégante.",tag:"PETIT PRIX",style:"minimal"},
-{id:5,name:"Maison de Luxe",category:"shop",label:"E-COMMERCE",price:89,description:"Un univers premium pour une marque ambitieuse.",tag:"EXCLUSIF",style:"luxury"},
-{id:6,name:"Créateur Pro",category:"portfolio",label:"PORTFOLIO",price:59,description:"Un portfolio moderne pour créateurs et indépendants.",tag:"NOUVEAU",style:"creator"}];
+{id:1,name:"Élégance Business",category:"business",label:"BUSINESS",price:39,description:"Un site vitrine raffiné pour présenter votre activité.",tag:"BEST-SELLER",style:"business"},
+{id:2,name:"Boutique Signature",category:"shop",label:"E-COMMERCE",price:49,description:"Une base chic pour mettre vos produits en valeur.",tag:"PREMIUM",style:"shop"},
+{id:3,name:"Portfolio Créatif",category:"portfolio",label:"PORTFOLIO",price:29,description:"Présentez vos projets avec une mise en page soignée.",tag:"",style:"portfolio"},
+{id:4,name:"Studio Minimal",category:"business",label:"BUSINESS",price:19,description:"Une présence en ligne simple, claire et élégante.",tag:"PETIT PRIX",style:"minimal"},
+{id:5,name:"Maison de Luxe",category:"shop",label:"E-COMMERCE",price:45,description:"Un univers premium pour une marque ambitieuse.",tag:"EXCLUSIF",style:"luxury"},
+{id:6,name:"Créateur Pro",category:"portfolio",label:"PORTFOLIO",price:35,description:"Un portfolio moderne pour créateurs et indépendants.",tag:"NOUVEAU",style:"creator"}];
 const euro=n=>new Intl.NumberFormat("fr-FR",{style:"currency",currency:"EUR"}).format(n);
 let cart=JSON.parse(localStorage.getItem("webstudio-cart")||"[]");
 const grid=document.getElementById("productGrid"),drawer=document.getElementById("cartDrawer"),overlay=document.getElementById("overlay");
